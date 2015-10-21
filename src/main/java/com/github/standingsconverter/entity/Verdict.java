@@ -1,0 +1,14 @@
+package com.github.standingsconverter.entity;
+
+public enum Verdict {
+    ACCEPTED,
+    REJECTED,
+    WRONG_ANSWER,
+    RUNTIME_ERROR,
+    TIME_LIMIT_EXCEEDED,
+    MEMORY_LIMIT_EXCEEDED,
+    COMPILATION_ERROR,
+    PRESENTATION_ERROR,
+    IDLENESS_LIMIT_EXCEEDED,
+    SECURITY_VIOLATION,
+}
