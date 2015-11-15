@@ -17,6 +17,6 @@ and therefore it's quite necessary to have such utility to import submissions an
 1. Download and install Maven, enter the root directory of this project and execute `mvn clean install`.
 2. Obtain a submission log you want to convert. If you use ejudge, enter to the contest as an admin (to the master page)
 and press "Export runs in XML external format" link. Save the opened text in the target directory of the project.
-3. Execute `java -jar java -jar [jarFile] [ejudgeInputFile] [testsysOutputFile]`. Parameter `jarFile` is the name of the
+3. Execute `java -jar [jarFile] [ejudgeInputFile] [testsysOutputFile]`. Parameter `jarFile` is the name of the
 jar in the target directory, including the extension, `ejudgeInputFile` is the file imported from ejudge, and
 `testsysOutputFile` is the file you want the converted log to be saved to.
