@@ -67,8 +67,9 @@ public class EjudgeParser implements Parser {
             Node node = nodeList.item(i);
             NamedNodeMap attributes = node.getAttributes();
             int id = Integer.parseInt(attributes.getNamedItem("id").getNodeValue());
-            String name = attributes.getNamedItem("short_name").getNodeValue();
-            Problem problem = new Problem(name.charAt(0), name);
+            String letter = attributes.getNamedItem("short_name").getNodeValue();
+            String name = attributes.getNamedItem("long_name").getNodeValue();
+            Problem problem = new Problem(letter.charAt(0), name);
             map.put(id, problem);
         }
         return map;
