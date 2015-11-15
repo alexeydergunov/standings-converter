@@ -37,9 +37,6 @@ public class EjudgeParser implements Parser {
             if (o1.getTime() != o2.getTime()) {
                 return Long.compare(o1.getTime(), o2.getTime());
             }
-            if (o1.getAttempt() != o2.getAttempt()) {
-                return Integer.compare(o1.getAttempt(), o2.getAttempt());
-            }
             return Integer.compare(o1.getId(), o2.getId());
         });
         return new Contest(name, duration, problemList, teamList, submissionList);
