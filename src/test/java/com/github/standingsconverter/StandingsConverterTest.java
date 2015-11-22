@@ -4,6 +4,7 @@ import com.github.standingsconverter.entity.Contest;
 import com.github.standingsconverter.outputter.Outputter;
 import com.github.standingsconverter.outputter.TestsysOutputter;
 import com.github.standingsconverter.parser.EjudgeParser;
+import com.github.standingsconverter.parser.PCMSParser;
 import com.github.standingsconverter.parser.Parser;
 import org.apache.commons.io.FileUtils;
 import org.testng.Assert;
@@ -108,6 +109,28 @@ public class StandingsConverterTest {
                 new TestsysOutputter(),
                 new File("src/test/resources/ejudge-to-testsys/ejudge-log-ssau-qual-2013.xml"),
                 new File("src/test/resources/ejudge-to-testsys/testsys-log-ssau-qual-2013.dat")
+        );
+        testInfo.runTest();
+    }
+
+    @Test
+    public void test6() throws IOException {
+        TestInfo testInfo = new TestInfo(
+                new PCMSParser(),
+                new TestsysOutputter(),
+                new File("src/test/resources/pcms-to-testsys/pcms-log-neerc-2007.xml"),
+                new File("src/test/resources/pcms-to-testsys/testsys-log-neerc-2007.dat")
+        );
+        testInfo.runTest();
+    }
+
+    @Test
+    public void test7() throws IOException {
+        TestInfo testInfo = new TestInfo(
+                new PCMSParser(),
+                new TestsysOutputter(),
+                new File("src/test/resources/pcms-to-testsys/pcms-log-neerc-northern-2013.xml"),
+                new File("src/test/resources/pcms-to-testsys/testsys-log-neerc-northern-2013.dat")
         );
         testInfo.runTest();
     }
