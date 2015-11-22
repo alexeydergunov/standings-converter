@@ -59,12 +59,55 @@ public class StandingsConverterTest {
 
     @Test
     public void test1() throws IOException {
-        // TODO add other tests
         TestInfo testInfo = new TestInfo(
                 new EjudgeParser(),
                 new TestsysOutputter(),
                 new File("src/test/resources/ejudge-to-testsys/ejudge-log-ssau-qual-2015.xml"),
                 new File("src/test/resources/ejudge-to-testsys/testsys-log-ssau-qual-2015.dat")
+        );
+        testInfo.runTest();
+    }
+
+    @Test
+    public void test2() throws IOException {
+        TestInfo testInfo = new TestInfo(
+                new EjudgeParser(),
+                new TestsysOutputter(),
+                new File("src/test/resources/ejudge-to-testsys/ejudge-log-ssau-contest-2015.xml"),
+                new File("src/test/resources/ejudge-to-testsys/testsys-log-ssau-contest-2015.dat")
+        );
+        testInfo.runTest();
+    }
+
+    @Test
+    public void test3() throws IOException {
+        TestInfo testInfo = new TestInfo(
+                new EjudgeParser(),
+                new TestsysOutputter(),
+                new File("src/test/resources/ejudge-to-testsys/ejudge-log-ssau-qual-2014.xml"),
+                new File("src/test/resources/ejudge-to-testsys/testsys-log-ssau-qual-2014.dat")
+        );
+        testInfo.runTest();
+    }
+
+    @Test
+    public void test4() throws IOException {
+        TestInfo testInfo = new TestInfo(
+                new EjudgeParser(),
+                new TestsysOutputter(),
+                new File("src/test/resources/ejudge-to-testsys/ejudge-log-ssau-contest-2014.xml"),
+                new File("src/test/resources/ejudge-to-testsys/testsys-log-ssau-contest-2014.dat")
+        );
+        testInfo.runTest();
+    }
+
+    @Test
+    public void test5() throws IOException {
+        TestInfo testInfo = new TestInfo(
+                new EjudgeParser(),
+                new TestsysOutputter(),
+                new File("src/test/resources/ejudge-to-testsys/ejudge-log-ssau-qual-2013.xml"),
+                new File("src/test/resources/ejudge-to-testsys/testsys-log-ssau-qual-2013.dat")
         );
         testInfo.runTest();
     }
