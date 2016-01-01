@@ -9,14 +9,21 @@ another. Usually people just don't import monitor and submission logs. This proj
 
 ## Supported testing systems
 
-For now, it can only parse Ejudge run logs and convert them to Testsys logs. Testsys logs are used in Codeforces Gyms,
-and therefore it's quite necessary to have such utility to import submissions and standings to gym contests.
+### As input
+
+- Ejudge (open-source testing system, [https://ejudge.ru](https://ejudge.ru))
+- PCMS (used in University ITMO)
+
+### As output
+
+- Testsys (used in Codeforces Gyms)
 
 ## Usage
 
 1. Download and install Maven, enter the root directory of this project and execute `mvn clean install`.
-2. Obtain a submission log you want to convert. If you use ejudge, enter to the contest as an admin (to the master page)
-and press "Export runs in XML external format" link. Save the opened text in the target directory of the project.
-3. Execute `java -jar [jarFile] [ejudgeInputFile] [testsysOutputFile]`. Parameter `jarFile` is the name of the
-jar in the target directory, including the extension, `ejudgeInputFile` is the file imported from ejudge, and
-`testsysOutputFile` is the file you want the converted log to be saved to.
+2. Obtain a submission log you want to convert. The examples of the submissions logs for different testing systems can
+be found in tests.
+3. Execute `java -jar [jarFile] [parserClass] [outputterClass] [inputFile] [outputFile]`. Parameter `jarFile` is the
+name of the jar in the target directory, including the extension, `parserClass` is the name of the class to process the
+input file, `outputterClass` is the name of the class to produce the output file, and the names `inputFile` and
+`outputFile` speak for themselves.

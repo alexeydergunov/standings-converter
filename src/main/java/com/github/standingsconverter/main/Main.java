@@ -2,23 +2,21 @@ package com.github.standingsconverter.main;
 
 import com.github.standingsconverter.entity.Contest;
 import com.github.standingsconverter.outputter.Outputter;
-import com.github.standingsconverter.outputter.TestsysOutputter;
-import com.github.standingsconverter.parser.EjudgeParser;
 import com.github.standingsconverter.parser.Parser;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        // TODO support multiple parsers and outputters
-        if (args.length != 2) {
-            System.out.println("Usage: java -jar [jarFile] [ejudgeInputFile] [testsysOutputFile]");
+        if (args.length != 4) {
+            System.out.println("Usage: java -jar [jarFile] [parserClass] [outputterClass] [inputFile] [outputFile]");
             return;
         }
-        String inputFile = args[0];
-        String outputFile = args[1];
-        Parser parser = new EjudgeParser();
-        Outputter outputter = new TestsysOutputter();
+        Parser parser = ClassFactory.createInstance(Parser.class, args[0]);
+        Outputter outputter = ClassFactory.createInstance(Outputter.class, args[1]);
+        String inputFile = args[2];
+        String outputFile = args[3];
+        System.out.printf("Use parser = %s, outputter = %s\n", parser.getClass().getSimpleName(), outputter.getClass().getSimpleName());
         long t1 = System.currentTimeMillis();
         Contest contest = parser.parse(inputFile);
         outputter.output(contest, outputFile);
