@@ -30,7 +30,6 @@ public class PCMSParser implements Parser {
         Map<String, Team> teams = parseTeams(getChildren(contestElement, "session"));
         Map<String, Problem> problems = parseProblems(getChild(contestElement, "challenge"));
         Map<Integer, Submission> submissions = parseSubmissions(teams, problems, getChildren(contestElement, "session"));
-        submissions = sortSubmissions(submissions);
         List<Team> teamList = new ArrayList<>(teams.values());
         List<Problem> problemList = new ArrayList<>(problems.values());
         List<Submission> submissionList = new ArrayList<>(submissions.values());
@@ -43,27 +42,6 @@ public class PCMSParser implements Parser {
             return Integer.compare(o1.getId(), o2.getId());
         });
         return new Contest(name, duration, problemList, teamList, submissionList);
-    }
-
-    private Map<Integer, Submission> sortSubmissions(Map<Integer, Submission> submissions) {
-        List<Map.Entry<Integer, Submission>> list = new ArrayList<>(submissions.entrySet());
-        Collections.sort(list, new Comparator<Map.Entry<Integer, Submission>>() {
-            @Override
-            public int compare(Map.Entry<Integer, Submission> o1, Map.Entry<Integer, Submission> o2) {
-                long t1 = o1.getValue().getTime();
-                long t2 = o2.getValue().getTime();
-                if (t1 < t2) return -1;
-                if (t1 > t2) return 1;
-                int id1 = o1.getKey();
-                int id2 = o2.getKey();
-                return id1 - id2;
-            }
-        });
-        Map<Integer, Submission> newMap = new HashMap<>();
-        for (int i = 0; i < list.size(); i++) {
-            newMap.put(i, list.get(i).getValue());
-        }
-        return newMap;
     }
 
     private Node getChild(Node parent, String name) {
