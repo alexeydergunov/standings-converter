@@ -34,7 +34,6 @@ public class TestsysOutputter implements Outputter {
             for (Submission submission : submissions) {
                 writer.println(toString(submission));
             }
-            writer.close();
         }
     }
 
