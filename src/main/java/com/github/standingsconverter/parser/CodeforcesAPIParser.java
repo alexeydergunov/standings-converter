@@ -192,7 +192,7 @@ public class CodeforcesAPIParser implements Parser {
         URL url = new URL(urlBuilder.toString());
         URLConnection connection = url.openConnection();
         StringBuilder jsonBuilder = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"))) {
             while (true) {
                 String line = reader.readLine();
                 if (line == null) {
