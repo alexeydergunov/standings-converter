@@ -9,8 +9,8 @@ import java.io.IOException;
 import java.util.*;
 
 public class TestsysParser implements Parser {
-	@Override
-	public Contest parse(String inputFile) throws IOException {
+    @Override
+    public Contest parse(String inputFile) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(new File(inputFile)))) {
             String name = "";
             long duration = 0;
@@ -62,32 +62,32 @@ public class TestsysParser implements Parser {
         }
     }
 
-	private Problem parseProblem(String problemDescription) {
-		char id = problemDescription.charAt(0);
-		problemDescription = problemDescription.substring(2);
-		String name = problemDescription.substring(0, problemDescription.indexOf(','));
-		return new Problem(id, name);
-	}
+    private Problem parseProblem(String problemDescription) {
+        char id = problemDescription.charAt(0);
+        problemDescription = problemDescription.substring(2);
+        String name = problemDescription.substring(0, problemDescription.indexOf(','));
+        return new Problem(id, name);
+    }
 
-	private Team parseTeam(String teamDescription) {
-		int id = Integer.parseInt(teamDescription.substring(0, teamDescription.indexOf(',')));
-		int firstPos = teamDescription.indexOf('"');
-		int lastPos = teamDescription.lastIndexOf('"');
-		String name = teamDescription.substring(firstPos + 1, lastPos);
-		return new Team(id, name);
-	}
+    private Team parseTeam(String teamDescription) {
+        int id = Integer.parseInt(teamDescription.substring(0, teamDescription.indexOf(',')));
+        int firstPos = teamDescription.indexOf('"');
+        int lastPos = teamDescription.lastIndexOf('"');
+        String name = teamDescription.substring(firstPos + 1, lastPos);
+        return new Team(id, name);
+    }
 
-	private Submission parseSubmission(String submissionDescription, Map<Character, Problem> problemMap, Map<Integer, Team> teamMap, int id) {
-		StringTokenizer tokenizer = new StringTokenizer(submissionDescription, ",");
-		int teamID = Integer.parseInt(tokenizer.nextToken());
-		Team team = teamMap.get(teamID);
-		char problemID = tokenizer.nextToken().charAt(0);
-		Problem problem = problemMap.get(problemID);
-		int attempt = Integer.parseInt(tokenizer.nextToken());
-		long time = Long.parseLong(tokenizer.nextToken());
-		Verdict verdict = parseVerdict(tokenizer.nextToken());
-		return new Submission(id, team, problem, attempt, time, verdict);
-	}
+    private Submission parseSubmission(String submissionDescription, Map<Character, Problem> problemMap, Map<Integer, Team> teamMap, int id) {
+        StringTokenizer tokenizer = new StringTokenizer(submissionDescription, ",");
+        int teamID = Integer.parseInt(tokenizer.nextToken());
+        Team team = teamMap.get(teamID);
+        char problemID = tokenizer.nextToken().charAt(0);
+        Problem problem = problemMap.get(problemID);
+        int attempt = Integer.parseInt(tokenizer.nextToken());
+        long time = Long.parseLong(tokenizer.nextToken());
+        Verdict verdict = parseVerdict(tokenizer.nextToken());
+        return new Submission(id, team, problem, attempt, time, verdict);
+    }
 
     private Verdict parseVerdict(String verdictCode) {
         switch (verdictCode) {
