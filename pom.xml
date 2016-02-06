@@ -32,6 +32,7 @@
                     <archive>
                         <manifest>
                             <mainClass>com.github.standingsconverter.main.Main</mainClass>
+                            <addClasspath>true</addClasspath>
                         </manifest>
                     </archive>
                 </configuration>
