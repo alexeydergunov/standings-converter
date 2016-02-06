@@ -2,6 +2,7 @@ package com.github.standingsconverter.main;
 
 import com.github.standingsconverter.outputter.EjudgeOutputter;
 import com.github.standingsconverter.outputter.TestsysOutputter;
+import com.github.standingsconverter.parser.CodeforcesAPIParser;
 import com.github.standingsconverter.parser.EjudgeParser;
 import com.github.standingsconverter.parser.PCMSParser;
 import com.github.standingsconverter.parser.TestsysParser;
@@ -12,6 +13,7 @@ import java.util.List;
 
 public class ClassFactory {
     private static final List<Class<?>> SUPPORTED_CLASSES = Collections.unmodifiableList(Arrays.asList(
+            CodeforcesAPIParser.class,
             EjudgeParser.class,
             PCMSParser.class,
             TestsysParser.class,
