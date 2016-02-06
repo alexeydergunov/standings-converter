@@ -4,6 +4,7 @@ import com.github.standingsconverter.outputter.EjudgeOutputter;
 import com.github.standingsconverter.outputter.TestsysOutputter;
 import com.github.standingsconverter.parser.EjudgeParser;
 import com.github.standingsconverter.parser.PCMSParser;
+import com.github.standingsconverter.parser.TestsysParser;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -13,6 +14,7 @@ public class ClassFactory {
     private static final List<Class<?>> SUPPORTED_CLASSES = Collections.unmodifiableList(Arrays.asList(
             EjudgeParser.class,
             PCMSParser.class,
+            TestsysParser.class,
             EjudgeOutputter.class,
             TestsysOutputter.class
     ));
