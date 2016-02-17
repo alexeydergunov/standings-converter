@@ -3,28 +3,31 @@ package com.github.standingsconverter.parser;
 import com.github.standingsconverter.entity.*;
 import com.google.gson.*;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.*;
 
 public class CodeforcesAPIParser implements Parser {
     private static final String PROPERTY_CONTEST_ID = "contestId";
+    private static final String PROPERTY_KEY = "key";
+    private static final String PROPERTY_SECRET = "secret";
 
-    private static final String CF_API_URL = "http://codeforces.com/api/";
+    private static final String CF_API_URL = "http://codeforces.com/api";
 
     @Override
     public Contest parse(String filename) throws IOException {
         Map<String, String> properties = parseProperties(filename);
         String contestId = properties.get(PROPERTY_CONTEST_ID);
-        Map<String, Object> contestStandingsParameters = new MapBuilder<String, Object>().
+        String apiKey = properties.get(PROPERTY_KEY);
+        String apiSecret = properties.get(PROPERTY_SECRET);
+        SortedMap<String, Object> contestStandingsParameters = new SortedMapBuilder<String, Object>().
                 put("contestId", contestId).
                 put("showUnofficial", true).
                 build();
-        JsonObject jsonContestStandings = readJsonFromAPI("contest.standings", contestStandingsParameters).getAsJsonObject();
+        JsonObject jsonContestStandings = readJsonFromAPI("contest.standings", contestStandingsParameters, apiKey, apiSecret).getAsJsonObject();
         checkStatus(jsonContestStandings);
         JsonObject jsonContestStandingsResult = jsonContestStandings.getAsJsonObject("result");
         JsonObject jsonContest = jsonContestStandingsResult.getAsJsonObject("contest");
@@ -62,10 +65,10 @@ public class CodeforcesAPIParser implements Parser {
         if (teams.size() != teamNameIdMap.size()) {
             throw new IllegalStateException("Some teams have equal names");
         }
-        Map<String, Object> contestStatusParameters = new MapBuilder<String, Object>().
+        SortedMap<String, Object> contestStatusParameters = new SortedMapBuilder<String, Object>().
                 put("contestId", contestId).
                 build();
-        JsonObject jsonContestStatus = readJsonFromAPI("contest.status", contestStatusParameters).getAsJsonObject();
+        JsonObject jsonContestStatus = readJsonFromAPI("contest.status", contestStatusParameters, apiKey, apiSecret).getAsJsonObject();
         checkStatus(jsonContestStatus);
         List<Submission> submissions = new ArrayList<>();
         JsonArray jsonContestStatusResult = jsonContestStatus.getAsJsonArray("result");
@@ -179,19 +182,33 @@ public class CodeforcesAPIParser implements Parser {
         }
     }
 
-    private JsonElement readJsonFromAPI(String method, Map<String, Object> parameters) throws IOException {
-        StringBuilder urlBuilder = new StringBuilder(CF_API_URL);
-        urlBuilder.append(method);
-        urlBuilder.append('?');
-        for (Map.Entry<String, Object> e : parameters.entrySet()) {
-            if (urlBuilder.charAt(urlBuilder.length() - 1) != '?') {
-                urlBuilder.append('&');
-            }
-            urlBuilder.append(e.getKey());
-            urlBuilder.append('=');
-            urlBuilder.append(e.getValue());
+    // parameters must be sorted to make private requests
+    private JsonElement readJsonFromAPI(String method, SortedMap<String, Object> parameters, String key, String secret) throws IOException {
+        if (key != null && secret != null) {
+            parameters.put("apiKey", key);
+            parameters.put("time", System.currentTimeMillis() / 1000);
         }
-        URL url = new URL(urlBuilder.toString());
+        StringBuilder methodWithParams = new StringBuilder();
+        methodWithParams.append(method);
+        methodWithParams.append('?');
+        for (Map.Entry<String, Object> e : parameters.entrySet()) {
+            if (methodWithParams.charAt(methodWithParams.length() - 1) != '?') {
+                methodWithParams.append('&');
+            }
+            methodWithParams.append(e.getKey());
+            methodWithParams.append('=');
+            methodWithParams.append(e.getValue());
+        }
+        if (key != null && secret != null) {
+            String rand = String.format("%06x", new Random().nextInt(1 << 24)); // 6 hex digits
+            String sha512Hash = sha512(rand, methodWithParams.toString(), secret);
+            methodWithParams.append('&');
+            methodWithParams.append("apiSig");
+            methodWithParams.append('=');
+            methodWithParams.append(rand);
+            methodWithParams.append(sha512Hash);
+        }
+        URL url = new URL(CF_API_URL + "/" + methodWithParams);
         URLConnection connection = url.openConnection();
         StringBuilder jsonBuilder = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"))) {
@@ -207,6 +224,22 @@ public class CodeforcesAPIParser implements Parser {
         return parser.parse(jsonBuilder.toString());
     }
 
+    private String sha512(String rand, String methodWithParams, String secret) throws UnsupportedEncodingException {
+        MessageDigest messageDigest;
+        try {
+            messageDigest = MessageDigest.getInstance("SHA-512");
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+        String str = rand + "/" + methodWithParams + "#" + secret;
+        byte[] bytes = messageDigest.digest(str.getBytes("UTF-8"));
+        StringBuilder result = new StringBuilder();
+        for (byte b : bytes) {
+            result.append(String.format("%02x", b & 0xFF));
+        }
+        return result.toString();
+    }
+
     private Map<String, String> parseProperties(String filename) throws IOException {
         Properties properties = new Properties();
         try (FileReader reader = new FileReader(filename)) {
@@ -217,22 +250,25 @@ public class CodeforcesAPIParser implements Parser {
         if (!map.containsKey(PROPERTY_CONTEST_ID)) {
             throw new IllegalArgumentException("Property " + PROPERTY_CONTEST_ID + " is missing");
         }
+        if (map.containsKey(PROPERTY_KEY) != map.containsKey(PROPERTY_SECRET)) {
+            throw new IllegalArgumentException("Properties " + PROPERTY_KEY + " and " + PROPERTY_SECRET + " must be both presented or both missing");
+        }
         return map;
     }
 
-    private static class MapBuilder<K, V> {
-        private final Map<K, V> map;
+    private static class SortedMapBuilder<K, V> {
+        private final SortedMap<K, V> map;
 
-        public MapBuilder() {
-            this.map = new HashMap<>();
+        public SortedMapBuilder() {
+            this.map = new TreeMap<>();
         }
 
-        public MapBuilder<K, V> put(K key, V value) {
+        public SortedMapBuilder<K, V> put(K key, V value) {
             map.put(key, value);
             return this;
         }
 
-        public Map<K, V> build() {
+        public SortedMap<K, V> build() {
             return map;
         }
     }
