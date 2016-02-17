@@ -1,8 +1,10 @@
 package com.github.standingsconverter;
 
 import com.github.standingsconverter.entity.Contest;
+import com.github.standingsconverter.outputter.EjudgeOutputter;
 import com.github.standingsconverter.outputter.Outputter;
 import com.github.standingsconverter.outputter.TestsysOutputter;
+import com.github.standingsconverter.parser.CodeforcesAPIParser;
 import com.github.standingsconverter.parser.EjudgeParser;
 import com.github.standingsconverter.parser.PCMSParser;
 import com.github.standingsconverter.parser.Parser;
@@ -131,6 +133,17 @@ public class StandingsConverterTest {
                 new TestsysOutputter(),
                 new File("src/test/resources/pcms-to-testsys/pcms-log-neerc-northern-2013.xml"),
                 new File("src/test/resources/pcms-to-testsys/testsys-log-neerc-northern-2013.dat")
+        );
+        testInfo.runTest();
+    }
+
+    @Test(enabled = false) // disabled for auto-testing as Codeforces may be unavailable
+    public void remoteTest1() throws IOException {
+        TestInfo testInfo = new TestInfo(
+                new CodeforcesAPIParser(),
+                new EjudgeOutputter(),
+                new File("src/test/resources/codeforces-to-ejudge/codeforces-api-ssau-noob-contest-2015.properties"),
+                new File("src/test/resources/codeforces-to-ejudge/ejudge-log-ssau-noob-contest-2015.xml")
         );
         testInfo.runTest();
     }

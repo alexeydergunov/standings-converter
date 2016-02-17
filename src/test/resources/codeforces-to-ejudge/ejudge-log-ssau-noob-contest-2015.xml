@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runlog duration="18000" fog_time="3600">
+    <name>Личный чемпионат СГАУ среди новичков 2015</name>
+    <users>
+        <user id="0" name="master_j"/>
+        <user id="1" name="fantom0x00F"/>
+        <user id="2" name="DnS"/>
+        <user id="3" name="mr.Sinister"/>
+        <user id="4" name="Shurpanchik"/>
+        <user id="5" name="AsGreyWolf"/>
+        <user id="6" name="orotti"/>
+        <user id="7" name="dancingQueen"/>
+        <user id="8" name="Kirundel"/>
+        <user id="9" name="North97"/>
+        <user id="10" name="Epsilon6431"/>
+        <user id="11" name="BKM"/>
+        <user id="12" name="Altair5000"/>
+        <user id="13" name="bizin.mitya"/>
+        <user id="14" name="BeiZero"/>
+        <user id="15" name="MaestroArtur"/>
+        <user id="16" name="Rinotto"/>
+        <user id="17" name="AZAZ"/>
+        <user id="18" name="Just_hawker"/>
+        <user id="19" name="STPDPSS"/>
+        <user id="20" name="hewhew"/>
+        <user id="21" name="awesomelaureen"/>
+        <user id="22" name="Alex_Kreb"/>
+        <user id="23" name="Tatiana.Pashina"/>
+        <user id="24" name="nikita.egorov"/>
+        <user id="25" name="AnastasiaPetasova"/>
+        <user id="26" name="Ann_11"/>
+    </users>
+    <problems>
+        <problem id="1" long_name="Клуб уже не анонимных программистов" short_name="A"/>
+        <problem id="2" long_name="Слабое звено" short_name="B"/>
+        <problem id="3" long_name="Проблемы Старосты" short_name="C"/>
+        <problem id="4" long_name="Площадь треугольника" short_name="D"/>
+        <problem id="5" long_name="Тетрис" short_name="E"/>
+        <problem id="6" long_name="Шоколадка" short_name="F"/>
+        <problem id="7" long_name="Дворовый футбол в Самаре" short_name="G"/>
+        <problem id="8" long_name="Черви и ослы" short_name="H"/>
+        <problem id="9" long_name="Ограбление века" short_name="I"/>
+        <problem id="10" long_name="Наша служба и опасна и трудна" short_name="J"/>
+        <problem id="11" long_name="Леша не может в красные" short_name="K"/>
+        <problem id="12" long_name="Таня и книжечки" short_name="L"/>
+        <problem id="13" long_name="Скобочная последовательность" short_name="M"/>
+        <problem id="14" long_name="Тренировки Андрея Викторовича" short_name="N"/>
+    </problems>
+    <runs>
+        <run prob_id="1" run_id="0" status="WA" time="148" user_id="3"/>
+        <run prob_id="1" run_id="1" status="OK" time="159" user_id="1"/>
+        <run prob_id="1" run_id="2" status="OK" time="181" user_id="5"/>
+        <run prob_id="1" run_id="3" status="WA" time="219" user_id="3"/>
+        <run prob_id="1" run_id="4" status="OK" time="287" user_id="13"/>
+        <run prob_id="1" run_id="5" status="OK" time="295" user_id="7"/>
+        <run prob_id="1" run_id="6" status="OK" time="295" user_id="6"/>
+        <run prob_id="1" run_id="7" status="OK" time="317" user_id="8"/>
+        <run prob_id="1" run_id="8" status="OK" time="318" user_id="19"/>
+        <run prob_id="1" run_id="9" status="OK" time="338" user_id="20"/>
+        <run prob_id="2" run_id="10" status="OK" time="344" user_id="2"/>
+        <run prob_id="1" run_id="11" status="OK" time="358" user_id="15"/>
+        <run prob_id="1" run_id="12" status="OK" time="358" user_id="18"/>
+        <run prob_id="1" run_id="13" status="OK" time="393" user_id="14"/>
+        <run prob_id="1" run_id="14" status="OK" time="427" user_id="11"/>
+        <run prob_id="1" run_id="15" status="OK" time="434" user_id="3"/>
+        <run prob_id="1" run_id="16" status="CE" time="439" user_id="4"/>
+        <run prob_id="1" run_id="17" status="OK" time="439" user_id="25"/>
+        <run prob_id="1" run_id="18" status="OK" time="442" user_id="10"/>
+        <run prob_id="1" run_id="19" status="CE" time="447" user_id="21"/>
+        <run prob_id="1" run_id="20" status="CE" time="456" user_id="12"/>
+        <run prob_id="1" run_id="21" status="OK" time="472" user_id="12"/>
+        <run prob_id="2" run_id="22" status="OK" time="515" user_id="7"/>
+        <run prob_id="2" run_id="23" status="OK" time="520" user_id="0"/>
+        <run prob_id="1" run_id="24" status="OK" time="558" user_id="4"/>
+        <run prob_id="1" run_id="25" status="OK" time="589" user_id="9"/>
+        <run prob_id="2" run_id="26" status="OK" time="595" user_id="6"/>
+        <run prob_id="2" run_id="27" status="OK" time="600" user_id="3"/>
+        <run prob_id="2" run_id="28" status="OK" time="612" user_id="14"/>
+        <run prob_id="2" run_id="29" status="OK" time="629" user_id="20"/>
+        <run prob_id="2" run_id="30" status="OK" time="637" user_id="5"/>
+        <run prob_id="2" run_id="31" status="OK" time="643" user_id="19"/>
+        <run prob_id="2" run_id="32" status="OK" time="647" user_id="8"/>
+        <run prob_id="1" run_id="33" status="OK" time="648" user_id="2"/>
+        <run prob_id="2" run_id="34" status="OK" time="651" user_id="18"/>
+        <run prob_id="2" run_id="35" status="OK" time="668" user_id="10"/>
+        <run prob_id="1" run_id="36" status="OK" time="686" user_id="23"/>
+        <run prob_id="2" run_id="37" status="OK" time="714" user_id="15"/>
+        <run prob_id="3" run_id="38" status="OK" time="730" user_id="7"/>
+        <run prob_id="2" run_id="39" status="RT" time="764" user_id="13"/>
+        <run prob_id="2" run_id="40" status="OK" time="793" user_id="1"/>
+        <run prob_id="2" run_id="41" status="WA" time="806" user_id="13"/>
+        <run prob_id="1" run_id="42" status="OK" time="818" user_id="22"/>
+        <run prob_id="3" run_id="43" status="OK" time="843" user_id="3"/>
+        <run prob_id="1" run_id="44" status="RT" time="855" user_id="24"/>
+        <run prob_id="2" run_id="45" status="OK" time="862" user_id="4"/>
+        <run prob_id="2" run_id="46" status="OK" time="870" user_id="9"/>
+        <run prob_id="3" run_id="47" status="WA" time="895" user_id="10"/>
+        <run prob_id="2" run_id="48" status="OK" time="915" user_id="12"/>
+        <run prob_id="1" run_id="49" status="WA" time="926" user_id="0"/>
+        <run prob_id="3" run_id="50" status="OK" time="929" user_id="10"/>
+        <run prob_id="2" run_id="51" status="OK" time="930" user_id="25"/>
+        <run prob_id="1" run_id="52" status="CE" time="962" user_id="24"/>
+        <run prob_id="3" run_id="53" status="OK" time="975" user_id="6"/>
+        <run prob_id="1" run_id="54" status="OK" time="1008" user_id="0"/>
+        <run prob_id="3" run_id="55" status="OK" time="1038" user_id="2"/>
+        <run prob_id="3" run_id="56" status="OK" time="1048" user_id="1"/>
+        <run prob_id="4" run_id="57" status="OK" time="1066" user_id="7"/>
+        <run prob_id="3" run_id="58" status="OK" time="1116" user_id="15"/>
+        <run prob_id="2" run_id="59" status="WA" time="1166" user_id="13"/>
+        <run prob_id="3" run_id="60" status="OK" time="1166" user_id="14"/>
+        <run prob_id="4" run_id="61" status="OK" time="1175" user_id="10"/>
+        <run prob_id="1" run_id="62" status="OK" time="1188" user_id="24"/>
+        <run prob_id="4" run_id="63" status="WA" time="1219" user_id="1"/>
+        <run prob_id="3" run_id="64" status="OK" time="1229" user_id="0"/>
+        <run prob_id="4" run_id="65" status="WA" time="1241" user_id="3"/>
+        <run prob_id="3" run_id="66" status="OK" time="1243" user_id="9"/>
+        <run prob_id="4" run_id="67" status="OK" time="1266" user_id="3"/>
+        <run prob_id="3" run_id="68" status="OK" time="1277" user_id="18"/>
+        <run prob_id="3" run_id="69" status="WA" time="1291" user_id="20"/>
+        <run prob_id="3" run_id="70" status="OK" time="1313" user_id="5"/>
+        <run prob_id="1" run_id="71" status="OK" time="1322" user_id="16"/>
+        <run prob_id="1" run_id="72" status="WA" time="1380" user_id="26"/>
+        <run prob_id="2" run_id="73" status="OK" time="1392" user_id="23"/>
+        <run prob_id="4" run_id="74" status="WA" time="1403" user_id="1"/>
+        <run prob_id="4" run_id="75" status="WA" time="1417" user_id="15"/>
+        <run prob_id="6" run_id="76" status="OK" time="1420" user_id="10"/>
+        <run prob_id="4" run_id="77" status="OK" time="1429" user_id="0"/>
+        <run prob_id="2" run_id="78" status="OK" time="1433" user_id="11"/>
+        <run prob_id="6" run_id="79" status="OK" time="1450" user_id="6"/>
+        <run prob_id="6" run_id="80" status="OK" time="1529" user_id="3"/>
+        <run prob_id="1" run_id="81" status="OK" time="1537" user_id="26"/>
+        <run prob_id="4" run_id="82" status="OK" time="1587" user_id="15"/>
+        <run prob_id="4" run_id="83" status="WA" time="1610" user_id="9"/>
+        <run prob_id="4" run_id="84" status="OK" time="1613" user_id="14"/>
+        <run prob_id="4" run_id="85" status="WA" time="1674" user_id="5"/>
+        <run prob_id="4" run_id="86" status="WA" time="1695" user_id="9"/>
+        <run prob_id="4" run_id="87" status="WA" time="1758" user_id="20"/>
+        <run prob_id="2" run_id="88" status="OK" time="1774" user_id="16"/>
+        <run prob_id="2" run_id="89" status="OK" time="1789" user_id="24"/>
+        <run prob_id="7" run_id="90" status="WA" time="1804" user_id="10"/>
+        <run prob_id="4" run_id="91" status="WA" time="1805" user_id="20"/>
+        <run prob_id="4" run_id="92" status="WA" time="1884" user_id="5"/>
+        <run prob_id="3" run_id="93" status="OK" time="1888" user_id="4"/>
+        <run prob_id="4" run_id="94" status="OK" time="1929" user_id="1"/>
+        <run prob_id="3" run_id="95" status="WA" time="1935" user_id="23"/>
+        <run prob_id="6" run_id="96" status="OK" time="1940" user_id="14"/>
+        <run prob_id="7" run_id="97" status="OK" time="1961" user_id="3"/>
+        <run prob_id="2" run_id="98" status="OK" time="1996" user_id="22"/>
+        <run prob_id="3" run_id="99" status="OK" time="2058" user_id="8"/>
+        <run prob_id="6" run_id="100" status="OK" time="2084" user_id="18"/>
+        <run prob_id="6" run_id="101" status="WA" time="2124" user_id="9"/>
+        <run prob_id="4" run_id="102" status="OK" time="2136" user_id="5"/>
+        <run prob_id="4" run_id="103" status="OK" time="2173" user_id="12"/>
+        <run prob_id="7" run_id="104" status="OK" time="2191" user_id="7"/>
+        <run prob_id="6" run_id="105" status="WA" time="2197" user_id="9"/>
+        <run prob_id="4" run_id="106" status="OK" time="2217" user_id="19"/>
+        <run prob_id="6" run_id="107" status="WA" time="2298" user_id="15"/>
+        <run prob_id="4" run_id="108" status="RT" time="2330" user_id="20"/>
+        <run prob_id="4" run_id="109" status="CE" time="2366" user_id="8"/>
+        <run prob_id="4" run_id="110" status="CE" time="2389" user_id="8"/>
+        <run prob_id="4" run_id="111" status="WA" time="2407" user_id="8"/>
+        <run prob_id="8" run_id="112" status="OK" time="2416" user_id="3"/>
+        <run prob_id="6" run_id="113" status="OK" time="2442" user_id="15"/>
+        <run prob_id="6" run_id="114" status="OK" time="2538" user_id="0"/>
+        <run prob_id="3" run_id="115" status="OK" time="2583" user_id="23"/>
+        <run prob_id="6" run_id="116" status="WA" time="2591" user_id="1"/>
+        <run prob_id="4" run_id="117" status="WA" time="2663" user_id="6"/>
+        <run prob_id="3" run_id="118" status="OK" time="2673" user_id="16"/>
+        <run prob_id="6" run_id="119" status="OK" time="2697" user_id="7"/>
+        <run prob_id="8" run_id="120" status="TL" time="2755" user_id="10"/>
+        <run prob_id="4" run_id="121" status="OK" time="2808" user_id="6"/>
+        <run prob_id="6" run_id="122" status="OK" time="2811" user_id="5"/>
+        <run prob_id="3" run_id="123" status="CE" time="2826" user_id="22"/>
+        <run prob_id="4" run_id="124" status="OK" time="2845" user_id="4"/>
+        <run prob_id="7" run_id="125" status="OK" time="2911" user_id="0"/>
+        <run prob_id="8" run_id="126" status="OK" time="2957" user_id="10"/>
+        <run prob_id="3" run_id="127" status="WA" time="3013" user_id="25"/>
+        <run prob_id="6" run_id="128" status="OK" time="3053" user_id="19"/>
+        <run prob_id="3" run_id="129" status="CE" time="3061" user_id="25"/>
+        <run prob_id="3" run_id="130" status="WA" time="3109" user_id="25"/>
+        <run prob_id="3" run_id="131" status="OK" time="3180" user_id="22"/>
+        <run prob_id="6" run_id="132" status="WA" time="3183" user_id="4"/>
+        <run prob_id="4" run_id="133" status="WA" time="3191" user_id="20"/>
+        <run prob_id="4" run_id="134" status="OK" time="3199" user_id="16"/>
+        <run prob_id="8" run_id="135" status="OK" time="3289" user_id="0"/>
+        <run prob_id="4" run_id="136" status="OK" time="3307" user_id="8"/>
+        <run prob_id="6" run_id="137" status="OK" time="3338" user_id="4"/>
+        <run prob_id="4" run_id="138" status="WA" time="3356" user_id="20"/>
+        <run prob_id="3" run_id="139" status="WA" time="3389" user_id="25"/>
+        <run prob_id="6" run_id="140" status="WA" time="3395" user_id="21"/>
+        <run prob_id="5" run_id="141" status="OK" time="3432" user_id="2"/>
+        <run prob_id="8" run_id="142" status="OK" time="3493" user_id="7"/>
+        <run prob_id="6" run_id="143" status="OK" time="3534" user_id="8"/>
+        <run prob_id="6" run_id="144" status="WA" time="3602" user_id="9"/>
+        <run prob_id="1" run_id="145" status="WA" time="3608" user_id="21"/>
+        <run prob_id="3" run_id="146" status="WA" time="3682" user_id="11"/>
+        <run prob_id="6" run_id="147" status="WA" time="3747" user_id="9"/>
+        <run prob_id="4" run_id="148" status="RT" time="3806" user_id="20"/>
+        <run prob_id="4" run_id="149" status="WA" time="3913" user_id="20"/>
+        <run prob_id="7" run_id="150" status="OK" time="4000" user_id="1"/>
+        <run prob_id="8" run_id="151" status="OK" time="4030" user_id="4"/>
+        <run prob_id="7" run_id="152" status="WA" time="4032" user_id="22"/>
+        <run prob_id="6" run_id="153" status="OK" time="4068" user_id="16"/>
+        <run prob_id="2" run_id="154" status="RT" time="4078" user_id="26"/>
+        <run prob_id="7" run_id="155" status="WA" time="4080" user_id="18"/>
+        <run prob_id="1" run_id="156" status="WA" time="4097" user_id="21"/>
+        <run prob_id="3" run_id="157" status="WA" time="4114" user_id="11"/>
+        <run prob_id="2" run_id="158" status="WA" time="4153" user_id="13"/>
+        <run prob_id="9" run_id="159" status="WA" time="4160" user_id="3"/>
+        <run prob_id="7" run_id="160" status="WA" time="4287" user_id="8"/>
+        <run prob_id="4" run_id="161" status="WA" time="4328" user_id="23"/>
+        <run prob_id="6" run_id="162" status="WA" time="4330" user_id="9"/>
+        <run prob_id="5" run_id="163" status="WA" time="4334" user_id="12"/>
+        <run prob_id="7" run_id="164" status="WA" time="4404" user_id="8"/>
+        <run prob_id="7" run_id="165" status="WA" time="4434" user_id="6"/>
+        <run prob_id="8" run_id="166" status="OK" time="4442" user_id="1"/>
+        <run prob_id="7" run_id="167" status="OK" time="4478" user_id="10"/>
+        <run prob_id="5" run_id="168" status="WA" time="4500" user_id="12"/>
+        <run prob_id="9" run_id="169" status="OK" time="4538" user_id="3"/>
+        <run prob_id="3" run_id="170" status="WA" time="4549" user_id="11"/>
+        <run prob_id="8" run_id="171" status="OK" time="4552" user_id="5"/>
+        <run prob_id="8" run_id="172" status="OK" time="4563" user_id="14"/>
+        <run prob_id="6" run_id="173" status="WA" time="4585" user_id="9"/>
+        <run prob_id="3" run_id="174" status="WA" time="4663" user_id="11"/>
+        <run prob_id="6" run_id="175" status="OK" time="4677" user_id="2"/>
+        <run prob_id="6" run_id="176" status="OK" time="4777" user_id="9"/>
+        <run prob_id="3" run_id="177" status="OK" time="4792" user_id="11"/>
+        <run prob_id="4" run_id="178" status="OK" time="4805" user_id="25"/>
+        <run prob_id="7" run_id="179" status="WA" time="4832" user_id="8"/>
+        <run prob_id="1" run_id="180" status="WA" time="4861" user_id="21"/>
+        <run prob_id="5" run_id="181" status="WA" time="5000" user_id="4"/>
+        <run prob_id="7" run_id="182" status="WA" time="5071" user_id="15"/>
+        <run prob_id="7" run_id="183" status="WA" time="5157" user_id="18"/>
+        <run prob_id="3" run_id="184" status="OK" time="5184" user_id="24"/>
+        <run prob_id="5" run_id="185" status="WA" time="5234" user_id="4"/>
+        <run prob_id="12" run_id="186" status="WA" time="5300" user_id="0"/>
+        <run prob_id="5" run_id="187" status="RT" time="5417" user_id="12"/>
+        <run prob_id="4" run_id="188" status="WA" time="5426" user_id="20"/>
+        <run prob_id="4" run_id="189" status="WA" time="5485" user_id="11"/>
+        <run prob_id="7" run_id="190" status="WA" time="5578" user_id="9"/>
+        <run prob_id="4" run_id="191" status="WA" time="5591" user_id="11"/>
+        <run prob_id="4" run_id="192" status="WA" time="5622" user_id="20"/>
+        <run prob_id="7" run_id="193" status="OK" time="5632" user_id="9"/>
+        <run prob_id="4" run_id="194" status="CE" time="5656" user_id="20"/>
+        <run prob_id="4" run_id="195" status="OK" time="5681" user_id="20"/>
+        <run prob_id="9" run_id="196" status="WA" time="5743" user_id="1"/>
+        <run prob_id="8" run_id="197" status="OK" time="5770" user_id="6"/>
+        <run prob_id="8" run_id="198" status="OK" time="5832" user_id="15"/>
+        <run prob_id="5" run_id="199" status="RT" time="5873" user_id="12"/>
+        <run prob_id="4" run_id="200" status="OK" time="5884" user_id="13"/>
+        <run prob_id="7" run_id="201" status="OK" time="5908" user_id="8"/>
+        <run prob_id="1" run_id="202" status="OK" time="5911" user_id="21"/>
+        <run prob_id="4" run_id="203" status="WA" time="5930" user_id="23"/>
+        <run prob_id="4" run_id="204" status="OK" time="6078" user_id="9"/>
+        <run prob_id="9" run_id="205" status="WA" time="6082" user_id="1"/>
+        <run prob_id="12" run_id="206" status="OK" time="6153" user_id="0"/>
+        <run prob_id="4" run_id="207" status="WA" time="6181" user_id="11"/>
+        <run prob_id="6" run_id="208" status="OK" time="6242" user_id="22"/>
+        <run prob_id="4" run_id="209" status="OK" time="6242" user_id="11"/>
+        <run prob_id="1" run_id="210" status="OK" time="6245" user_id="17"/>
+        <run prob_id="4" run_id="211" status="OK" time="6269" user_id="24"/>
+        <run prob_id="9" run_id="212" status="WA" time="6271" user_id="1"/>
+        <run prob_id="2" run_id="213" status="WA" time="6276" user_id="13"/>
+        <run prob_id="9" run_id="214" status="WA" time="6297" user_id="5"/>
+        <run prob_id="7" run_id="215" status="WA" time="6328" user_id="6"/>
+        <run prob_id="11" run_id="216" status="WA" time="6368" user_id="14"/>
+        <run prob_id="5" run_id="217" status="WA" time="6431" user_id="4"/>
+        <run prob_id="4" run_id="218" status="OK" time="6499" user_id="2"/>
+        <run prob_id="6" run_id="219" status="OK" time="6504" user_id="21"/>
+        <run prob_id="2" run_id="220" status="OK" time="6577" user_id="17"/>
+        <run prob_id="8" run_id="221" status="OK" time="6583" user_id="16"/>
+        <run prob_id="7" run_id="222" status="OK" time="6586" user_id="6"/>
+        <run prob_id="5" run_id="223" status="WA" time="6606" user_id="4"/>
+        <run prob_id="5" run_id="224" status="WA" time="6610" user_id="12"/>
+        <run prob_id="5" run_id="225" status="WA" time="6619" user_id="12"/>
+        <run prob_id="6" run_id="226" status="OK" time="6632" user_id="20"/>
+        <run prob_id="8" run_id="227" status="WA" time="6669" user_id="19"/>
+        <run prob_id="5" run_id="228" status="WA" time="6691" user_id="25"/>
+        <run prob_id="5" run_id="229" status="OK" time="6754" user_id="4"/>
+        <run prob_id="6" run_id="230" status="OK" time="6776" user_id="13"/>
+        <run prob_id="8" run_id="231" status="OK" time="6805" user_id="8"/>
+        <run prob_id="3" run_id="232" status="OK" time="6835" user_id="17"/>
+        <run prob_id="6" run_id="233" status="OK" time="6855" user_id="11"/>
+        <run prob_id="6" run_id="234" status="OK" time="6889" user_id="23"/>
+        <run prob_id="4" run_id="235" status="WA" time="7063" user_id="17"/>
+        <run prob_id="6" run_id="236" status="OK" time="7091" user_id="12"/>
+        <run prob_id="3" run_id="237" status="WA" time="7233" user_id="19"/>
+        <run prob_id="4" run_id="238" status="WA" time="7263" user_id="17"/>
+        <run prob_id="9" run_id="239" status="WA" time="7265" user_id="7"/>
+        <run prob_id="12" run_id="240" status="WA" time="7332" user_id="14"/>
+        <run prob_id="9" run_id="241" status="WA" time="7348" user_id="1"/>
+        <run prob_id="8" run_id="242" status="OK" time="7350" user_id="2"/>
+        <run prob_id="8" run_id="243" status="OK" time="7418" user_id="11"/>
+        <run prob_id="8" run_id="244" status="OK" time="7492" user_id="9"/>
+        <run prob_id="9" run_id="245" status="WA" time="7538" user_id="1"/>
+        <run prob_id="3" run_id="246" status="TL" time="7598" user_id="19"/>
+        <run prob_id="9" run_id="247" status="OK" time="7624" user_id="1"/>
+        <run prob_id="12" run_id="248" status="WA" time="7699" user_id="6"/>
+        <run prob_id="6" run_id="249" status="RT" time="7782" user_id="17"/>
+        <run prob_id="8" run_id="250" status="OK" time="7866" user_id="13"/>
+        <run prob_id="9" run_id="251" status="WA" time="7943" user_id="8"/>
+        <run prob_id="9" run_id="252" status="RT" time="8069" user_id="15"/>
+        <run prob_id="8" run_id="253" status="OK" time="8148" user_id="12"/>
+        <run prob_id="6" run_id="254" status="OK" time="8243" user_id="1"/>
+        <run prob_id="3" run_id="255" status="OK" time="8552" user_id="19"/>
+        <run prob_id="7" run_id="256" status="OK" time="8677" user_id="2"/>
+        <run prob_id="9" run_id="257" status="WA" time="8717" user_id="15"/>
+        <run prob_id="6" run_id="258" status="WA" time="8732" user_id="17"/>
+        <run prob_id="5" run_id="259" status="OK" time="8750" user_id="0"/>
+        <run prob_id="6" run_id="260" status="WA" time="8775" user_id="17"/>
+        <run prob_id="6" run_id="261" status="WA" time="8859" user_id="17"/>
+        <run prob_id="8" run_id="262" status="OK" time="8950" user_id="18"/>
+        <run prob_id="8" run_id="263" status="WA" time="9188" user_id="19"/>
+        <run prob_id="5" run_id="264" status="RT" time="9247" user_id="3"/>
+        <run prob_id="5" run_id="265" status="OK" time="9358" user_id="3"/>
+        <run prob_id="8" run_id="266" status="WA" time="9588" user_id="19"/>
+        <run prob_id="3" run_id="267" status="TL" time="9589" user_id="13"/>
+        <run prob_id="6" run_id="268" status="OK" time="9668" user_id="25"/>
+        <run prob_id="3" run_id="269" status="TL" time="9775" user_id="13"/>
+        <run prob_id="7" run_id="270" status="WA" time="9819" user_id="17"/>
+        <run prob_id="3" run_id="271" status="OK" time="10092" user_id="13"/>
+        <run prob_id="9" run_id="272" status="WA" time="10133" user_id="7"/>
+        <run prob_id="4" run_id="273" status="WA" time="10162" user_id="21"/>
+        <run prob_id="5" run_id="274" status="WA" time="10209" user_id="6"/>
+        <run prob_id="5" run_id="275" status="OK" time="10262" user_id="6"/>
+        <run prob_id="4" run_id="276" status="WA" time="10309" user_id="21"/>
+        <run prob_id="4" run_id="277" status="WA" time="10337" user_id="22"/>
+        <run prob_id="9" run_id="278" status="WA" time="10520" user_id="10"/>
+        <run prob_id="4" run_id="279" status="WA" time="10540" user_id="22"/>
+        <run prob_id="4" run_id="280" status="OK" time="10540" user_id="21"/>
+        <run prob_id="12" run_id="281" status="WA" time="10775" user_id="6"/>
+        <run prob_id="9" run_id="282" status="OK" time="10896" user_id="0"/>
+        <run prob_id="12" run_id="283" status="WA" time="10972" user_id="6"/>
+        <run prob_id="11" run_id="284" status="WA" time="11065" user_id="8"/>
+        <run prob_id="9" run_id="285" status="RT" time="11137" user_id="15"/>
+        <run prob_id="11" run_id="286" status="WA" time="11154" user_id="8"/>
+        <run prob_id="7" run_id="287" status="WA" time="11166" user_id="17"/>
+        <run prob_id="9" run_id="288" status="WA" time="11173" user_id="10"/>
+        <run prob_id="12" run_id="289" status="WA" time="11259" user_id="6"/>
+        <run prob_id="9" run_id="290" status="WA" time="11365" user_id="7"/>
+        <run prob_id="10" run_id="291" status="WA" time="11381" user_id="2"/>
+        <run prob_id="9" run_id="292" status="WA" time="11400" user_id="15"/>
+        <run prob_id="7" run_id="293" status="WA" time="11431" user_id="17"/>
+        <run prob_id="10" run_id="294" status="OK" time="11433" user_id="1"/>
+        <run prob_id="9" run_id="295" status="WA" time="11487" user_id="7"/>
+        <run prob_id="11" run_id="296" status="WA" time="11494" user_id="8"/>
+        <run prob_id="2" run_id="297" status="OK" time="11532" user_id="13"/>
+        <run prob_id="11" run_id="298" status="WA" time="11557" user_id="8"/>
+        <run prob_id="4" run_id="299" status="OK" time="11560" user_id="17"/>
+        <run prob_id="11" run_id="300" status="WA" time="11586" user_id="8"/>
+        <run prob_id="9" run_id="301" status="RT" time="11650" user_id="15"/>
+        <run prob_id="7" run_id="302" status="WA" time="11692" user_id="4"/>
+        <run prob_id="9" run_id="303" status="WA" time="11739" user_id="5"/>
+        <run prob_id="9" run_id="304" status="OK" time="11768" user_id="5"/>
+        <run prob_id="9" run_id="305" status="WA" time="11828" user_id="7"/>
+        <run prob_id="9" run_id="306" status="WA" time="11898" user_id="15"/>
+        <run prob_id="3" run_id="307" status="WA" time="11960" user_id="21"/>
+        <run prob_id="7" run_id="308" status="OK" time="11965" user_id="4"/>
+        <run prob_id="7" run_id="309" status="WA" time="12006" user_id="19"/>
+        <run prob_id="11" run_id="310" status="OK" time="12058" user_id="8"/>
+        <run prob_id="9" run_id="311" status="WA" time="12083" user_id="7"/>
+        <run prob_id="3" run_id="312" status="WA" time="12133" user_id="21"/>
+        <run prob_id="9" run_id="313" status="WA" time="12251" user_id="7"/>
+        <run prob_id="5" run_id="314" status="OK" time="12372" user_id="11"/>
+        <run prob_id="9" run_id="315" status="WA" time="12397" user_id="12"/>
+        <run prob_id="9" run_id="316" status="RT" time="12537" user_id="10"/>
+        <run prob_id="5" run_id="317" status="CE" time="12583" user_id="9"/>
+        <run prob_id="5" run_id="318" status="WA" time="12615" user_id="9"/>
+        <run prob_id="9" run_id="319" status="WA" time="12643" user_id="7"/>
+        <run prob_id="7" run_id="320" status="WA" time="12687" user_id="13"/>
+        <run prob_id="9" run_id="321" status="WA" time="12729" user_id="10"/>
+        <run prob_id="7" run_id="322" status="OK" time="12768" user_id="17"/>
+        <run prob_id="5" run_id="323" status="WA" time="12827" user_id="9"/>
+        <run prob_id="8" run_id="324" status="WA" time="12932" user_id="19"/>
+        <run prob_id="6" run_id="325" status="WA" time="12974" user_id="17"/>
+        <run prob_id="6" run_id="326" status="WA" time="12995" user_id="17"/>
+        <run prob_id="5" run_id="327" status="WA" time="13007" user_id="9"/>
+        <run prob_id="5" run_id="328" status="RT" time="13138" user_id="5"/>
+        <run prob_id="5" run_id="329" status="WA" time="13172" user_id="9"/>
+        <run prob_id="5" run_id="330" status="OK" time="13338" user_id="5"/>
+        <run prob_id="5" run_id="331" status="OK" time="13785" user_id="9"/>
+        <run prob_id="7" run_id="332" status="WA" time="13848" user_id="18"/>
+        <run prob_id="6" run_id="333" status="WA" time="13917" user_id="17"/>
+        <run prob_id="9" run_id="334" status="RT" time="13945" user_id="4"/>
+        <run prob_id="9" run_id="335" status="WA" time="13947" user_id="7"/>
+        <run prob_id="8" run_id="336" status="WA" time="13971" user_id="19"/>
+        <run prob_id="10" run_id="337" status="WA" time="13981" user_id="0"/>
+        <run prob_id="7" run_id="338" status="WA" time="14010" user_id="15"/>
+        <run prob_id="9" run_id="339" status="WA" time="14082" user_id="7"/>
+        <run prob_id="9" run_id="340" status="WA" time="14115" user_id="4"/>
+        <run prob_id="12" run_id="341" status="RT" time="14157" user_id="2"/>
+        <run prob_id="9" run_id="342" status="WA" time="14168" user_id="7"/>
+        <run prob_id="9" run_id="343" status="OK" time="14282" user_id="4"/>
+        <run prob_id="12" run_id="344" status="TL" time="14286" user_id="2"/>
+        <run prob_id="5" run_id="345" status="WA" time="14376" user_id="24"/>
+        <run prob_id="10" run_id="346" status="OK" time="14384" user_id="0"/>
+        <run prob_id="7" run_id="347" status="WA" time="14518" user_id="15"/>
+        <run prob_id="9" run_id="348" status="WA" time="14549" user_id="6"/>
+        <run prob_id="7" run_id="349" status="RT" time="14613" user_id="15"/>
+        <run prob_id="12" run_id="350" status="OK" time="14686" user_id="2"/>
+        <run prob_id="7" run_id="351" status="WA" time="14788" user_id="15"/>
+        <run prob_id="3" run_id="352" status="OK" time="14834" user_id="12"/>
+        <run prob_id="6" run_id="353" status="WA" time="14845" user_id="17"/>
+        <run prob_id="7" run_id="354" status="WA" time="14913" user_id="20"/>
+        <run prob_id="12" run_id="355" status="WA" time="15022" user_id="4"/>
+        <run prob_id="12" run_id="356" status="TL" time="15097" user_id="4"/>
+        <run prob_id="7" run_id="357" status="WA" time="15142" user_id="20"/>
+        <run prob_id="11" run_id="358" status="WA" time="15204" user_id="5"/>
+        <run prob_id="10" run_id="359" status="RT" time="15242" user_id="2"/>
+        <run prob_id="3" run_id="360" status="WA" time="15258" user_id="21"/>
+        <run prob_id="12" run_id="361" status="TL" time="15266" user_id="4"/>
+        <run prob_id="3" run_id="362" status="WA" time="15296" user_id="21"/>
+        <run prob_id="6" run_id="363" status="OK" time="15324" user_id="17"/>
+        <run prob_id="9" run_id="364" status="WA" time="15347" user_id="6"/>
+        <run prob_id="3" run_id="365" status="WA" time="15406" user_id="21"/>
+        <run prob_id="12" run_id="366" status="TL" time="15424" user_id="4"/>
+        <run prob_id="5" run_id="367" status="OK" time="15476" user_id="12"/>
+        <run prob_id="3" run_id="368" status="WA" time="15543" user_id="21"/>
+        <run prob_id="9" run_id="369" status="OK" time="15589" user_id="7"/>
+        <run prob_id="7" run_id="370" status="WA" time="15637" user_id="13"/>
+        <run prob_id="12" run_id="371" status="WA" time="15644" user_id="4"/>
+        <run prob_id="7" run_id="372" status="WA" time="15656" user_id="23"/>
+        <run prob_id="11" run_id="373" status="OK" time="15697" user_id="0"/>
+        <run prob_id="3" run_id="374" status="OK" time="15879" user_id="21"/>
+        <run prob_id="5" run_id="375" status="OK" time="15925" user_id="1"/>
+        <run prob_id="12" run_id="376" status="WA" time="16077" user_id="8"/>
+        <run prob_id="7" run_id="377" status="WA" time="16092" user_id="23"/>
+        <run prob_id="7" run_id="378" status="WA" time="16110" user_id="18"/>
+        <run prob_id="7" run_id="379" status="WA" time="16181" user_id="18"/>
+        <run prob_id="11" run_id="380" status="WA" time="16320" user_id="14"/>
+        <run prob_id="7" run_id="381" status="WA" time="16343" user_id="18"/>
+        <run prob_id="9" run_id="382" status="WA" time="16373" user_id="6"/>
+        <run prob_id="11" run_id="383" status="WA" time="16413" user_id="14"/>
+        <run prob_id="7" run_id="384" status="OK" time="16448" user_id="5"/>
+        <run prob_id="11" run_id="385" status="WA" time="16498" user_id="14"/>
+        <run prob_id="10" run_id="386" status="WA" time="16521" user_id="2"/>
+        <run prob_id="11" run_id="387" status="WA" time="16592" user_id="14"/>
+        <run prob_id="12" run_id="388" status="WA" time="16647" user_id="8"/>
+        <run prob_id="11" run_id="389" status="WA" time="16675" user_id="14"/>
+        <run prob_id="7" run_id="390" status="OK" time="16773" user_id="13"/>
+        <run prob_id="5" run_id="391" status="WA" time="16798" user_id="25"/>
+        <run prob_id="5" run_id="392" status="RT" time="16835" user_id="24"/>
+        <run prob_id="5" run_id="393" status="WA" time="16889" user_id="24"/>
+        <run prob_id="2" run_id="394" status="WA" time="16905" user_id="21"/>
+        <run prob_id="9" run_id="395" status="RT" time="16915" user_id="9"/>
+        <run prob_id="5" run_id="396" status="WA" time="16968" user_id="25"/>
+        <run prob_id="11" run_id="397" status="WA" time="16968" user_id="14"/>
+        <run prob_id="2" run_id="398" status="WA" time="16980" user_id="21"/>
+        <run prob_id="12" run_id="399" status="WA" time="17038" user_id="4"/>
+        <run prob_id="12" run_id="400" status="WA" time="17157" user_id="8"/>
+        <run prob_id="10" run_id="401" status="OK" time="17180" user_id="2"/>
+        <run prob_id="12" run_id="402" status="WA" time="17229" user_id="4"/>
+        <run prob_id="11" run_id="403" status="WA" time="17239" user_id="14"/>
+        <run prob_id="2" run_id="404" status="OK" time="17260" user_id="21"/>
+        <run prob_id="3" run_id="405" status="RT" time="17260" user_id="20"/>
+        <run prob_id="12" run_id="406" status="WA" time="17271" user_id="4"/>
+        <run prob_id="11" run_id="407" status="WA" time="17296" user_id="14"/>
+        <run prob_id="12" run_id="408" status="WA" time="17312" user_id="4"/>
+        <run prob_id="3" run_id="409" status="RT" time="17319" user_id="20"/>
+        <run prob_id="11" run_id="410" status="WA" time="17328" user_id="14"/>
+        <run prob_id="12" run_id="411" status="WA" time="17377" user_id="4"/>
+        <run prob_id="11" run_id="412" status="WA" time="17391" user_id="14"/>
+        <run prob_id="5" run_id="413" status="WA" time="17396" user_id="25"/>
+        <run prob_id="11" run_id="414" status="WA" time="17420" user_id="14"/>
+        <run prob_id="3" run_id="415" status="OK" time="17457" user_id="20"/>
+        <run prob_id="7" run_id="416" status="RT" time="17508" user_id="11"/>
+        <run prob_id="11" run_id="417" status="WA" time="17522" user_id="14"/>
+        <run prob_id="11" run_id="418" status="WA" time="17556" user_id="7"/>
+        <run prob_id="11" run_id="419" status="WA" time="17562" user_id="1"/>
+        <run prob_id="12" run_id="420" status="WA" time="17567" user_id="8"/>
+        <run prob_id="9" run_id="421" status="WA" time="17603" user_id="17"/>
+        <run prob_id="11" run_id="422" status="WA" time="17611" user_id="14"/>
+        <run prob_id="9" run_id="423" status="WA" time="17614" user_id="17"/>
+        <run prob_id="12" run_id="424" status="WA" time="17672" user_id="4"/>
+        <run prob_id="7" run_id="425" status="RT" time="17681" user_id="11"/>
+        <run prob_id="12" run_id="426" status="WA" time="17744" user_id="4"/>
+        <run prob_id="12" run_id="427" status="WA" time="17771" user_id="4"/>
+        <run prob_id="12" run_id="428" status="WA" time="17835" user_id="4"/>
+        <run prob_id="12" run_id="429" status="WA" time="17866" user_id="4"/>
+    </runs>
+</runlog>

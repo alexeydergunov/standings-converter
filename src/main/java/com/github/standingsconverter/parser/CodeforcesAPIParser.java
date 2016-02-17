@@ -4,6 +4,7 @@ import com.github.standingsconverter.entity.*;
 import com.google.gson.*;
 
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -11,13 +12,14 @@ import java.net.URLConnection;
 import java.util.*;
 
 public class CodeforcesAPIParser implements Parser {
+    private static final String PROPERTY_CONTEST_ID = "contestId";
+
     private static final String CF_API_URL = "http://codeforces.com/api/";
 
     @Override
     public Contest parse(String filename) throws IOException {
-        //noinspection UnnecessaryLocalVariable
-        String contestId = filename; // TODO make input parameter less confusing
-
+        Map<String, String> properties = parseProperties(filename);
+        String contestId = properties.get(PROPERTY_CONTEST_ID);
         Map<String, Object> contestStandingsParameters = new MapBuilder<String, Object>().
                 put("contestId", contestId).
                 put("showUnofficial", true).
@@ -203,6 +205,19 @@ public class CodeforcesAPIParser implements Parser {
         }
         JsonParser parser = new JsonParser();
         return parser.parse(jsonBuilder.toString());
+    }
+
+    private Map<String, String> parseProperties(String filename) throws IOException {
+        Properties properties = new Properties();
+        try (FileReader reader = new FileReader(filename)) {
+            properties.load(reader);
+        }
+        Map<String, String> map = new HashMap<>(properties.size());
+        properties.forEach((key, value) -> map.put((String) key, (String) value));
+        if (!map.containsKey(PROPERTY_CONTEST_ID)) {
+            throw new IllegalArgumentException("Property " + PROPERTY_CONTEST_ID + " is missing");
+        }
+        return map;
     }
 
     private static class MapBuilder<K, V> {
