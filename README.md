@@ -29,4 +29,5 @@ be found in tests.
 3. Execute `java -jar [jarFile] [parserClass] [outputterClass] [inputFile] [outputFile]`. Parameter `jarFile` is the
 name of the project's jar in the target directory, including the extension, `parserClass` is the name of the class to
 process the input file, `outputterClass` is the name of the class to produce the output file, and the names `inputFile`
-and `outputFile` speak for themselves (except for the CodeforcesAPIParser, whose input parameter is a contestId).
+and `outputFile` speak for themselves. For CodeforcesAPIParser, `inputFile` is a properties file which must contain a
+property `contestId`, and may contains properties `key` and `secret` if you are going to parse a private contest.
