@@ -108,6 +108,7 @@ public class EjudgeParser implements Parser {
             case "WA": return Verdict.WRONG_ANSWER;
             case "ML": return Verdict.MEMORY_LIMIT_EXCEEDED;
             case "SE": return Verdict.SECURITY_VIOLATION;
+            case "WT": return Verdict.IDLENESS_LIMIT_EXCEEDED;
             case "RJ": return Verdict.REJECTED;
         }
         throw new IllegalArgumentException("Unknown verdict: " + s);
