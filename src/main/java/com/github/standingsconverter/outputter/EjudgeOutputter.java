@@ -81,7 +81,7 @@ public class EjudgeOutputter implements Outputter {
             case MEMORY_LIMIT_EXCEEDED: return "ML";
             case COMPILATION_ERROR: return "CE";
             case PRESENTATION_ERROR: return "PE";
-            case IDLENESS_LIMIT_EXCEEDED: return "TL";
+            case IDLENESS_LIMIT_EXCEEDED: return "WT";
             case SECURITY_VIOLATION: return "SE";
         }
         throw new IllegalArgumentException("Unknown verdict: " + verdict);
