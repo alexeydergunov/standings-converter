@@ -15,6 +15,7 @@ another. Usually people just don't import monitor and submission logs. This proj
 - Ejudge (open-source testing system, [https://ejudge.ru](https://ejudge.ru))
 - PCMS (used in University ITMO)
 - Testsys (used in Codeforces Gyms)
+- Yandex.Contest
 
 ### As output
 
