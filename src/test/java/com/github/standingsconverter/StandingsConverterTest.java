@@ -4,10 +4,7 @@ import com.github.standingsconverter.entity.Contest;
 import com.github.standingsconverter.outputter.EjudgeOutputter;
 import com.github.standingsconverter.outputter.Outputter;
 import com.github.standingsconverter.outputter.TestsysOutputter;
-import com.github.standingsconverter.parser.CodeforcesAPIParser;
-import com.github.standingsconverter.parser.EjudgeParser;
-import com.github.standingsconverter.parser.PCMSParser;
-import com.github.standingsconverter.parser.Parser;
+import com.github.standingsconverter.parser.*;
 import org.apache.commons.io.FileUtils;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -133,6 +130,28 @@ public class StandingsConverterTest {
                 new TestsysOutputter(),
                 new File("src/test/resources/pcms-to-testsys/pcms-log-neerc-northern-2013.xml"),
                 new File("src/test/resources/pcms-to-testsys/testsys-log-neerc-northern-2013.dat")
+        );
+        testInfo.runTest();
+    }
+
+    @Test
+    public void test8() throws IOException {
+        TestInfo testInfo = new TestInfo(
+                new YandexContestParser(),
+                new TestsysOutputter(),
+                new File("src/test/resources/yandexcontest-to-testsys/yandexcontest-log-ptz-yandex-cup-2018.xml"),
+                new File("src/test/resources/yandexcontest-to-testsys/testsys-log-ptz-yandex-cup-2018.dat")
+        );
+        testInfo.runTest();
+    }
+
+    @Test
+    public void test9() throws IOException {
+        TestInfo testInfo = new TestInfo(
+                new YandexContestParser(),
+                new TestsysOutputter(),
+                new File("src/test/resources/yandexcontest-to-testsys/yandexcontest-log-ptz-yandex-cup-2019.xml"),
+                new File("src/test/resources/yandexcontest-to-testsys/testsys-log-ptz-yandex-cup-2019.dat")
         );
         testInfo.runTest();
     }
