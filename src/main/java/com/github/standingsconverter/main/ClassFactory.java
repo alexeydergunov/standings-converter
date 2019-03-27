@@ -2,10 +2,7 @@ package com.github.standingsconverter.main;
 
 import com.github.standingsconverter.outputter.EjudgeOutputter;
 import com.github.standingsconverter.outputter.TestsysOutputter;
-import com.github.standingsconverter.parser.CodeforcesAPIParser;
-import com.github.standingsconverter.parser.EjudgeParser;
-import com.github.standingsconverter.parser.PCMSParser;
-import com.github.standingsconverter.parser.TestsysParser;
+import com.github.standingsconverter.parser.*;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -17,6 +14,7 @@ public class ClassFactory {
             EjudgeParser.class,
             PCMSParser.class,
             TestsysParser.class,
+            YandexContestParser.class,
             EjudgeOutputter.class,
             TestsysOutputter.class
     ));
