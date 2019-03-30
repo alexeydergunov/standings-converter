@@ -26,7 +26,7 @@ public class YandexContestParser implements Parser {
 
         Node settingsElement = getChild(contestLogElement, "settings");
         Node durationElement = getChild(settingsElement, "duration");
-        long duration = parseDuration(durationElement);
+        long duration = parseDuration(durationElement) / 60;
         String name = getChild(settingsElement, "contestName").getTextContent();
 
         Node usersElement = getChild(contestLogElement, "users");
